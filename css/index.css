@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+
+@font-face {
+  font-family: 'Montserrat ExtraBold';
+  src: url('Montserrat-ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratregular';
+  src: url('montserrat-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'montserratregular';
+}
+
+div.content {
+  overflow: hidden;
+}
+
+.container{
+  margin-top: 10px;
+  
+}
+
+.main-content{
+    overflow: hidden;
+    width: 40vw;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    padding-bottom: 3px;
+    padding-right: 320px;
+    padding-left: 50px;
+    transform: translate(0, -50%);
+    color: #fff;
+    background: linear-gradient(to right, #8092e4,  #8597db, #97a6e0, #99abf1bd, #ffffff00);
+    align-items: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+#mainword{
+    font-family: 'Montserrat ExtraBold';
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    color: #fff;
+}
+
+#sameword{
+    font-size: 16px;
+}
+
+#text-below{
+  font-weight: lighter;
+  margin-left: 5px;
+  font-size: 13px;
+}
+
+#denrlogo{
+  width: 70vw;
+  opacity: 0.7;
+  height: 100vh;
+  object-fit: cover;
+  float: right;
+  margin-right: -20px;
+}
+
+.form-group input{
+  outline: none;
+  padding: 5px;
+  width: 208px;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-group i{
+    font-size: 22px;
+}
+
+.form-group button{
+  padding:12px;
+  outline: none;
+  border: none;
+  width: 250px;
+  color: white;
+  border-radius: 7px;
+  background-color: #1f35b3;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: ease-in-out .3s;
+}
+
+.form-group button:hover{
+  background-color: #3159dd;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

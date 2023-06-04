@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+
+@font-face {
+  font-family: 'Montserrat ExtraBold';
+  src: url('Montserrat-ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratregular';
+  src: url('montserrat-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'montserratregular';
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  background-color: #8092e4;
+  position: fixed;
+  padding-top: 10px;
+  height: 100%;
+  width: 70px;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.sidebar a {
+  display: block;
+  color: #c0bfbf91;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-icon {
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-icon span {
+  display: block;
+  position: absolute;
+  top: -0.5em;
+  left: -15em;
+  padding: 10px;
+  padding-left:20px;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(76,166,213,0.6727065826330532) 17%, rgba(8,131,242,1) 28%, rgba(3,105,254,1) 75%, rgba(62,140,182,0.0032387955182072714) 100%);
+  color: white;
+  outline: none;
+  border: none;
+  font-weight: bolder;
+  width: 200px;
+  text-align: center;
+  font-size: 14.5px;
+  overflow: hidden;
+  opacity: 0;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.nav-icon:hover span, .sidebar a:hover span {
+  transform: translateX(100%);
+  opacity: 1;
+}
+
+#logo{
+  width: 45px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+}
+
+a i{
+  font-size: 25px;
+  text-align: center;
+}
+
+.sidebar a.active {
+  background-color: #8092e4;
+  color: white;
+}
+
+.sidebar a:hover:not(.active), .nav-icon i:hover:not(.active) {
+  background-color: #8c9ee4;
+  color: #ffffff;
+  transition: ease-in-out 0.5s;
+}
+
+div.content {
+  margin-left: 54.1px;
+  padding: 1px 16px;
+  overflow: hidden;
+}
+
+.container{
+  margin-top: 10px;
+  
+}
+
+.main-content{
+    overflow: hidden;
+    width: 40vw;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    padding-bottom: 3px;
+    padding-right: 320px;
+    padding-left: 50px;
+    transform: translate(0, -50%);
+    color: #fff;
+    background: linear-gradient(to right, #8092e4,  #8597db, #97a6e0, #99abf1bd, #ffffff00);
+    align-items: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+#mainword{
+    font-family: 'Montserrat ExtraBold';
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    color: #fff;
+}
+
+#statusword{
+  font-family: 'Montserrat ExtraBold';
+  font-weight: bold;
+}
+
+#sameword{
+    font-size: 16px;
+}
+
+#text-below{
+  font-weight: lighter;
+  margin-left: 5px;
+  font-size: 13px;
+}
+
+#denrlogo{
+  width: 70vw;
+  opacity: 0.7;
+  height: 100vh;
+  object-fit: cover;
+  float: right;
+  margin-top: -1.6px;
+  margin-right: -20px;
+}
+
+.hover-container{
+  position: relative;
+  display: inline-block;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+  padding: 10px;
+  z-index: 999;
+  background-color: #f9f9f9;
+  animation: slideRight 0.5s ease-in-out;
+}
+
+.home-container{
+    overflow: hidden;
+    width: 40vw;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    padding-bottom: 3px;
+    padding-right: 320px;
+    padding-left: 50px;
+    display: none;
+    transform: translate(0, -50%);
+    color: #fff;
+    background: linear-gradient(to right, #8092e4,  #8597db, #97a6e0, #99abf1bd, #ffffff00);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hover-container:hover .text {
+  position: absolute;
+  display: block;
+}
+
+#showadmin, #showuser{
+  display: none;
+}

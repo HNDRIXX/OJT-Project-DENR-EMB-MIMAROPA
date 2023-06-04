@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+body, html {
+    background-image: url("https://i.ibb.co/St651x3/hexnew.jpg");
+    background-repeat: initial;
+    background-size: contain;
+    height: 100%;
+}
+
+body {
+    animation: fadeInAnimation ease .7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h5{
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-container{
+    background: white;
+    width: 50vw;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    top: 2%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.inline{
+    display: flex;
+    align-items: center;
+}
+
+#dvsnSelect, #sectionSelect, #unitSelect, #roleSelected, #enmoSelected, input{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+}
+
+.edit-container i{
+    display: inline-block;
+    width: 50px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.inline-container{
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+label{
+    font-size: 15px;
+    font-weight: bolder;
+    font-size: 16px;
+    color: #000b35;
+}
+
+.headerContent {
+    background-color: white;
+    width: 100%;
+    padding: 50px;
+    z-index: 10;
+    position: fixed;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.headerContent h1{
+    text-align: center;
+    /* transform: translateX(-100px); */
+    font-family: 'Oswald';
+    font-weight: bolder;
+    letter-spacing: -.5px;
+    color: #1b2d77;
+    height: 10px;
+}
+
+#readinput{
+    border: none;
+}
+
+#icon-content{
+    font-size: 25px;
+    color: #10205e;
+}
+
+#submit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #3eb33a;
+    color: #ffffff;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: #48c743;
+    transition: 0.3s ease-in-out;
+}
+
+div.content {
+    margin-left: 64px;
+    padding: 1px 16px;
+}
+
+.container{
+    margin-top: 10px;
+    color: white;
+}
+
+.fa-chevron-left{
+    color: #fff;
+    font-size: 2em;
+    position: fixed;
+    padding: 20px;
+    border-radius: 0px 0px 150px 0px;
+    background: #8092e4;
+    padding-right: 40px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    top: 5%;
+    left:0;
+    transition: ease-in-out .3s;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.fa-chevron-left:hover{
+    font-size: 2.1em;
+    padding-right: 50px;
+    padding-bottom: 45px;
+}
+
+.fa-xmark{
+    color: gray;
+    pointer: cursor;
+    position: absolute;
+    font-size: 18px;
+    right: 2%;
+    top: 2%;
+    transition: ease-in-out .3s;
+}
+
+.fa-xmark:hover{
+    transform: scale(1.1);
+    display: block;
+    
+}

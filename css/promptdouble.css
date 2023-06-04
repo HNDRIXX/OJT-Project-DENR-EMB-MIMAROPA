@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+body, html {
+    background-image: url("https://i.ibb.co/St651x3/hexnew.jpg");
+    background-repeat: initial;
+    background-size: contain;
+    height: 100%;
+}
+
+body {
+    animation: fadeInAnimation ease .7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(30%);
+}
+
+.delete-container{
+    text-align: center;
+    padding: 50px 100px 50px 100px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+#submityes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #21a841;
+    color: #ffffff;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#submitno{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #616161;
+    color: #ffffff;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#cancel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #5e5c5c;
+    color: #ffffff;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#submityes:hover{
+    background-color: #35cc58;
+}
+
+#submitno:hover{
+    background-color: #868686;
+}
+
+#xmark{
+    font-size:20px;
+    color: gray;
+    float: right;
+    margin-right:-4em;
+    margin-top: -1.5em;
+    transition: ease-in-out .3s;
+}
+
+#xmark:hover{
+    transform: scale(1.1);
+}
+
+.inline{
+    display: flex;
+    align-items: center;
+}
+
+label{
+    font-size: 15px;
+    font-weight: bolder;
+}
